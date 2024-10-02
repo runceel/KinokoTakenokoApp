@@ -138,7 +138,7 @@ var groupChat = new AgentGroupChat(facilitatorAgent, kinokoAgent, takenokoAgent)
         SelectionStrategy = new KernelFunctionSelectionStrategy(
             kernel.CreateFunctionFromPrompt($$$"""
                 これまでの会話の履歴を確認して、次に話すべき人を指定してください。
-                指定の歳には話す人の候補にある人の名前のみを回答してください。
+                指定の際には話す人の候補にある人の名前のみを回答してください。
 
                 ## 話す人の候補
                 - {{{kinokoAgent.Name}}}: きのこの山が大好きな人
